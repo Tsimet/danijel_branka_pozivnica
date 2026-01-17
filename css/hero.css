@@ -1,0 +1,29 @@
+section:first-child .section-overlay {
+  border-left: 3px solid rgb(255, 225, 200);
+  border-right: 3px solid rgb(255, 225, 200);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+h1 {
+  font-family: "Great Vibes";
+  font-size: 5.2rem;
+  text-align: center;
+  padding-top: 8rem;
+}
+.hero-ring {
+  font-size: 5rem;
+  text-align: center;
+  margin: 4rem auto 2rem auto;
+  /* background-color: white; */
+  width: fit-content;
+  /* border-radius: 50%; */
+  /* border: 5px solid red; */
+}
+.hero-text {
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+}

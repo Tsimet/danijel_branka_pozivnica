@@ -1,3 +1,60 @@
-.container {
-  color: green;
+/* @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,300;0,900;1,300&display=swap");
+@import url(css/hero.css);
+@import url(css/date.css);
+@import url(css/notice.css);
+html {
+  background-color: rgba(255, 225, 200, 0.5);
+}
+body {
+  max-width: 43rem;
+  margin: 0 auto 5rem auto;
+  color: #3e2723;
+}
+section:first-of-type {
+  height: 100vh;
+  font-family: "Great Vibes", cursive;
+}
+section {
+  height: 95vh;
+
+  overflow-x: hidden;
+  position: relative;
+  clip-path: inset(0);
+}
+.section-overlay {
+  width: 100%;
+  height: 100%;
+}
+
+section:nth-child(2) .section-overlay,
+section:nth-child(3) .section-overlay,
+section:nth-child(4) .section-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 225, 200, 0.3) 0%,
+    rgba(255, 225, 200, 0.5) 90%
+  );
+}
+.fixed-image {
+  position: fixed;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+h1,
+h2,
+h3 {
+  font-family: "Great Vibes";
+}
+h1 {
+  color: #3e2723;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 4.5rem;
 }
