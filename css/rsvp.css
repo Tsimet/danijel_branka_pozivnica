@@ -1,0 +1,44 @@
+section:nth-child(6) .section-overlay form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Great Vibes";
+  background: url("../images/background.jpg");
+  background-size: auto;
+  background-attachment: fixed;
+}
+section:nth-child(6) option {
+  font-family: "Great Vibes";
+}
+section:nth-child(6) .section-overlay form input[type="text"] {
+  background-color: rgb(163, 134, 125);
+
+  font-size: 2.5rem;
+  text-align: center;
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 1.3rem;
+}
+section:nth-child(6) .section-overlay form input[type="text"]::placeholder {
+  color: #3e2723;
+}
+section:nth-child(6) .section-overlay form select {
+  font-size: 3rem;
+  width: 80%;
+  text-align: center;
+  background-color: rgb(163, 134, 125);
+  color: #3e2723;
+  padding: 1.3rem;
+}
+section:nth-child(6) .section-overlay form input[type="submit"] {
+  margin: 5rem;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  background-color: rgb(163, 134, 125);
+  color: #3e2723;
+  cursor: pointer;
+}

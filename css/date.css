@@ -1,23 +1,19 @@
 section:nth-child(2) .section-overlay {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
-}
-.date__date,
-.date__header,
-.date__location {
-  text-align: center;
-  color: white;
+  gap: 5rem;
 }
 
 .date__header {
   font-size: 4.5rem;
   margin: 3rem 0 3rem 0;
 }
-.date__date,
-.date__location {
+.date__text {
   font-size: 2rem;
-}
-.date__location {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
 }

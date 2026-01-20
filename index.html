@@ -10,7 +10,16 @@
   <body>
     <section>
       <div class="section-overlay">
-        <h1>Бранка & Данијел</h1>
+        <img src="images/couple.jpg" alt="couple" />
+        <h1>Branka & Danijel</h1>
+        <!-- <p class="hero-text">
+          <br />
+          Sa velikom radošću <br />vas pozivamo da zajedno sa nama proslavite
+          dan kada ćemo <br />
+          jedno drugom reći <br />
+          zauvek
+        </p> 
+        <div class="hero-ring">💍</div> -->
         <p class="hero-text">
           <br />
           Sa velikom radošću <br />vas pozivamo da zajedno sa nama proslavite
@@ -18,28 +27,47 @@
           jedno drugom reći <br />
           zauvek
         </p>
-        <div class="hero-ring">💍</div>
       </div>
     </section>
-    <section id="second">
+    <section>
       <div class="section-overlay">
         <div>
           <h2 class="date__header">Datum & Lokacija</h2>
-          <p class="date__date">9. oktobar 2026</p>
-          <p class="date__location">Festina Palace</p>
+          <p class="date__text">9. oktobar 2026</p>
+          <p class="date__text">Festina Palace</p>
         </div>
         <div>
           <h2 class="date__header">Program večeri</h2>
-          <p class="date__date">Dolazak gostiju: 16:00</p>
-          <p class="date__location">Prvi ples: 17:00 💃🕺</p>
-          <p class="date__location">Torta: 21:00 🎂</p>
+          <p class="date__text">Dolazak gostiju: 16:00</p>
+          <p class="date__text">Prvi ples: 17:00</p>
+          <p class="date__text">Torta: 21:00</p>
         </div>
         <img src="images/img1.jpg" alt="" class="fixed-image" />
       </div>
     </section>
     <section>
       <div class="section-overlay">
+        <h2>Dress code - Boje večeri</h2>
+        <p>
+          Vesele boje su više nego dobrodošle
+          <br />
+          Naša želja je slavlje puno radosti, topline i boja <br />
+          pustite mašti na volju i neka vaša odeća bude deo te priče. <br />
+          Molimo vas da izbegnete belo, ono je rezervisano za mladu. <br />
+          Crna je u redu ukoliko nemate šarene kombinacije.
+        </p>
+        <img src="images/colors.jpg" alt="" class="fixed-image" />
+      </div>
+    </section>
+    <section class="divider-section">
+      <span>Još</span>
+      <span id="timer">0</span>
+      <span id="days">dana</span>
+    </section>
+    <section>
+      <div class="section-overlay">
         <h2>Mala napomena</h2>
+        <br />
         <p>
           Volimo vaše mališane, ali smo ovaj dan zamislili kao romantičnu i
           opuštenu proslavu namenjenu odraslima <br />
@@ -53,9 +81,59 @@
     </section>
     <section>
       <div class="section-overlay">
-        rteghtyrtgfbn
-        <img src="images/img3.jpg" alt="" class="fixed-image" />
+        <form action="">
+          <input type="text" placeholder="Ime i Prezime" />
+          <select name="" id="">
+            <option selected disabled>Broj gostiju koji dolaze sa mnom</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <input type="submit" value="Potvrdi" id="confetti-btn" />
+        </form>
+        <!-- <img src="images/img3.jpg" alt="" class="fixed-image" /> -->
       </div>
     </section>
+    <script defer>
+      const targetDate = new Date("Oct 9, 2026 00:00:00").getTime();
+
+      const countdown = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+        if (days % 10 === 1) {
+          document.getElementById("days").innerHTML = "dan";
+        }
+
+        document.getElementById("timer").innerText = days;
+        if (distance < 0) {
+          clearInterval(countdown);
+          document.getElementById("countdown").innerHTML = "0";
+        }
+      }, 1000);
+
+      const confettiBtn = document.getElementById("confetti-btn");
+
+      confettiBtn.addEventListener("click", (event) => {
+        event.preventDefault();
+        confetti({
+          particleCount: 150,
+          spread: 70,
+          origin: { y: 0.6 },
+          colors: ["#ff4d4d", "#ffffff", "#4d79ff"],
+        });
+      });
+    </script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"
+    ></script>
   </body>
 </html>

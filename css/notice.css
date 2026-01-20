@@ -1,3 +1,4 @@
+section:nth-child(5) .section-overlay,
 section:nth-child(3) .section-overlay {
   color: white;
   display: flex;
@@ -5,9 +6,11 @@ section:nth-child(3) .section-overlay {
   justify-content: center;
   flex-direction: column;
 }
+section:nth-child(5) .section-overlay h2,
 section:nth-child(3) .section-overlay h2 {
   padding: 0 0 6rem 0;
 }
+section:nth-child(5) .section-overlay p,
 section:nth-child(3) .section-overlay p {
   font-size: 1.8rem;
   text-align: center;
