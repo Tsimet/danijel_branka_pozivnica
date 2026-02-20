@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pozivnica za vencanje</title>
     <!-- <link rel="stylesheet" href="css/reset.css" /> -->
     <link rel="stylesheet" href="style.css" />
     <script
@@ -133,6 +133,25 @@
         }
       }, 1000);
     </script>
-    <script defer src="api/submit.js"></script>
+    <script defer>
+      const form = document.getElementById("inviteForm");
+
+      console.log("evooooo");
+
+      form.onsubmit = function (event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_vencanje", "template_vencanje", this).then(
+          function () {
+            alert("Poruka je uspešno poslata!");
+            form.reset();
+            // If you have confetti code, trigger it here!
+          },
+          function (error) {
+            alert("Greška: " + JSON.stringify(error));
+          }
+        );
+      };
+    </script>
   </body>
 </html>
