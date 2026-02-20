@@ -4,13 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css" />
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
     <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script defer type="text/javascript">
+      (function () {
+        emailjs.init("KTypT1KcnaF5qa5TN");
+      })();
+    </script>
   </head>
   <body>
     <section>
       <div class="section-overlay">
-        <img src="images/couple.jpg" alt="couple" />
+        <div class="couple-wrapper">
+          <img src="images/couple.jpeg" alt="couple" />
+        </div>
         <h1>Branka & Danijel</h1>
         <!-- <p class="hero-text">
           <br />
@@ -42,7 +57,7 @@
           <p class="date__text">Prvi ples: 17:00</p>
           <p class="date__text">Torta: 21:00</p>
         </div>
-        <img src="images/img1.jpg" alt="" class="fixed-image" />
+        <img src="images/img1.jpeg" alt="" class="fixed-image" />
       </div>
     </section>
     <section>
@@ -81,9 +96,9 @@
     </section>
     <section>
       <div class="section-overlay">
-        <form action="">
-          <input type="text" placeholder="Ime i Prezime" />
-          <select name="" id="">
+        <form id="inviteForm">
+          <input type="text" name="guestName" placeholder="Ime i Prezime" />
+          <select name="guestCount" id="guestCount">
             <option selected disabled>Broj gostiju koji dolaze sa mnom</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -97,7 +112,6 @@
           </select>
           <input type="submit" value="Potvrdi" id="confetti-btn" />
         </form>
-        <!-- <img src="images/img3.jpg" alt="" class="fixed-image" /> -->
       </div>
     </section>
     <script defer>
@@ -118,22 +132,7 @@
           document.getElementById("countdown").innerHTML = "0";
         }
       }, 1000);
-
-      const confettiBtn = document.getElementById("confetti-btn");
-
-      confettiBtn.addEventListener("click", (event) => {
-        event.preventDefault();
-        confetti({
-          particleCount: 150,
-          spread: 70,
-          origin: { y: 0.6 },
-          colors: ["#ff4d4d", "#ffffff", "#4d79ff"],
-        });
-      });
     </script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"
-    ></script>
+    <script defer src="api/submit.js"></script>
   </body>
 </html>

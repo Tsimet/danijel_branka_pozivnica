@@ -8,16 +8,26 @@ section:first-child .section-overlay {
 
   background: url("../images/background.jpg");
   background-size: auto;
+
+  /* overflow-x: hidden; */
 }
-section:first-child img {
-  transform: scale(1.8);
-  margin: 10rem auto 2rem auto;
+.couple-wrapper {
+  max-height: 48rem;
+  /* overflow: hidden; */
+  /* outline: 5px solid red; */
+}
+section:first-child .couple-wrapper img {
+  /* transform: scale(0.85); */
+  /* margin: 5rem auto 2rem auto; */
+  max-width: inherit;
+  max-height: inherit;
+  border-radius: 1rem;
 }
 h1 {
   font-family: "Great Vibes";
   font-size: 5.2rem;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 .hero-text {
   font-size: 2.35rem;
@@ -25,11 +35,3 @@ h1 {
   font-weight: 300;
   font-family: "Lato", sans-serif;
 }
-
-/* .hero-ring {
-  font-size: 5rem;
-  text-align: center;
-  margin: 4rem auto 2rem auto;
-  width: fit-content;
-}
- */
