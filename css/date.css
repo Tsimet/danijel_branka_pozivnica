@@ -17,6 +17,13 @@ section:nth-child(2) .section-overlay {
   color: white;
   font-weight: 550;
   font-family: "Lato", sans-serif;
+  margin: 1rem 0 1rem 0;
+}
+.date__mapHelper {
+  color: white;
+  text-align: center;
+  margin: -1rem 0 1rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 section:nth-child(2) img.fixed-image {
   position: fixed;

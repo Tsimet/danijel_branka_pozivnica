@@ -72,3 +72,6 @@ h2 {
 .clear-shadow {
   text-shadow: none;
 }
+a {
+  text-decoration: none;
+}

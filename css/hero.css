@@ -8,17 +8,12 @@ section:first-child .section-overlay {
 
   background: url("../images/background.jpg");
   background-size: auto;
-
-  /* overflow-x: hidden; */
 }
 .couple-wrapper {
+  margin-top: -8rem;
   max-height: 48rem;
-  /* overflow: hidden; */
-  /* outline: 5px solid red; */
 }
 section:first-child .couple-wrapper img {
-  /* transform: scale(0.85); */
-  /* margin: 5rem auto 2rem auto; */
   max-width: inherit;
   max-height: inherit;
   border-radius: 1rem;
@@ -27,11 +22,12 @@ h1 {
   font-family: "Great Vibes";
   font-size: 5.2rem;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 .hero-text {
   font-size: 2.35rem;
   text-align: center;
   font-weight: 300;
   font-family: "Lato", sans-serif;
+  margin-top: 8rem;
 }
