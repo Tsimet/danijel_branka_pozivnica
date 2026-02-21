@@ -14,4 +14,5 @@ section:nth-child(5) .section-overlay p,
 section:nth-child(3) .section-overlay p {
   font-size: 1.8rem;
   text-align: center;
+  font-weight: 550;
 }

@@ -41,4 +41,9 @@ section:nth-child(6) .section-overlay form input[type="submit"] {
   background-color: rgb(163, 134, 125);
   color: #3e2723;
   cursor: pointer;
+  border: none;
+}
+.rsvp__reminder {
+  font-size: 2rem;
+  font-weight: 600;
 }

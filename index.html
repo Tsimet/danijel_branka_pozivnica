@@ -35,7 +35,7 @@
           zauvek
         </p> 
         <div class="hero-ring">💍</div> -->
-        <p class="hero-text">
+        <p class="hero-text clear-shadow">
           <br />
           Sa velikom radošću <br />vas pozivamo da zajedno sa nama proslavite
           dan kada ćemo <br />
@@ -97,9 +97,17 @@
     <section>
       <div class="section-overlay">
         <form id="inviteForm">
-          <input type="text" name="guestName" placeholder="Ime i Prezime" />
-          <select name="guestCount" id="guestCount">
-            <option selected disabled>Broj gostiju koji dolaze sa mnom</option>
+          <input
+            type="text"
+            name="guestName"
+            placeholder="Ime i Prezime"
+            required
+          />
+          <select name="guestCount" id="guestCount" required>
+            <option value="" selected disabled>
+              Broj gostiju koji dolaze sa mnom
+            </option>
+            <option value="Samo ja">Samo ja</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -110,7 +118,16 @@
             <option value="8">8</option>
             <option value="9">9</option>
           </select>
+          <input
+            type="text"
+            name="dodatnaImena"
+            placeholder="Imena Ostalih Gostiju"
+            required
+          />
           <input type="submit" value="Potvrdi" id="confetti-btn" />
+          <p class="rsvp__reminder clear-shadow">
+            Molimo vas da potvrdite do 9. Septembra!
+          </p>
         </form>
       </div>
     </section>

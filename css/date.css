@@ -9,17 +9,18 @@ section:nth-child(2) .section-overlay {
 .date__header {
   font-size: 4.5rem;
   margin: 3rem 0 3rem 0;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 .date__text {
   font-size: 2rem;
   text-align: center;
   color: white;
-  font-weight: 300;
+  font-weight: 550;
   font-family: "Lato", sans-serif;
 }
 section:nth-child(2) img.fixed-image {
   position: fixed;
-  object-fit: contain;
+  object-fit: cover;
   top: 0;
   left: 0;
   width: 100%;

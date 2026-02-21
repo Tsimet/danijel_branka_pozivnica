@@ -3,7 +3,7 @@ section:first-child .section-overlay {
   border-right: 3px solid rgb(255, 225, 200);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
 
   background: url("../images/background.jpg");
@@ -27,7 +27,7 @@ h1 {
   font-family: "Great Vibes";
   font-size: 5.2rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .hero-text {
   font-size: 2.35rem;
