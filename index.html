@@ -119,10 +119,18 @@
             placeholder="Imena Ostalih Gostiju"
             required
           />
-          <input type="submit" value="Potvrdi" id="confetti-btn" />
-          <p class="rsvp__reminder clear-shadow">
+          <input
+            type="submit"
+            value="Potvrdi"
+            id="confetti-btn"
+            onclick="
+              this.disabled = true;
+              this.value('Šalje se...');
+            "
+          />
+          <!-- <p class="rsvp__reminder clear-shadow">
             Molimo vas da potvrdite do 20. Septembra!
-          </p>
+          </p> -->
         </form>
       </div>
     </section>
@@ -157,7 +165,6 @@
           function () {
             alert("Poruka je uspešno poslata!");
             form.reset();
-            // If you have confetti code, trigger it here!
           },
           function (error) {
             alert("Greška: " + JSON.stringify(error));
